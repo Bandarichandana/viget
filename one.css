@@ -34,7 +34,7 @@ ul {
   padding: 8px 15px;
   background: rgb(20, 95, 145);
   border-radius: 30px;
-  & a{
+  & a {
     color: whitesmoke;
     text-decoration: none;
   }
@@ -132,7 +132,6 @@ header {
   & li {
     padding: 35px;
   }
- 
 }
 
 .viget-client-include {
@@ -241,20 +240,19 @@ header {
       border-radius: 50%;
     }
   }
-  
 }
-.article-sublogo{
-  & img{
+.article-sublogo {
+  & img {
     cursor: pointer;
   }
 }
 .article-spets {
   border-bottom: 1px solid rgba(168, 150, 50, 0.511);
-  & img{
+  & img {
     cursor: pointer;
-}
   }
-  
+}
+
 .viget-connect-article {
   display: flex;
   flex-direction: column;
@@ -263,14 +261,13 @@ header {
   & p {
     color: white;
     font-size: 1.5rem;
-  }& p:hover{
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
+  }
+  & p:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
   }
   & span {
     color: whitesmoke;
-
- 
   }
   & .title {
     color: green;
@@ -283,8 +280,8 @@ header {
   & p {
     color: white;
     font-size: 1.5rem;
-
-  }& p:hover{
+  }
+  & p:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px;
   }
@@ -332,7 +329,7 @@ header {
   margin: 130px 70px 40px 50px;
 
   & .viget-justify-content {
-    width: 50%;
+    width: 100%;
   }
   & .viget-footer-content {
     text-align: left;
@@ -401,37 +398,40 @@ header {
   }
 }
 
-
 .viget-footer {
   display: flex;
   justify-content: space-between;
   margin: 50px 40px 60px 40px;
   border-top: 2px solid gray;
-  padding:40px;
-  & .viget-left-footer {
+  padding: 40px;
+  & .viget-left-footer div .left-footer-logos {
     display: flex;
-  }& .viget-left-footer div .left-footer-logos {
-    display: flex;
-  }& .left-footer-logos li {
+  }
+  & .left-footer-logos li {
     cursor: pointer;
     margin: 0px 13px;
     color: #757575;
-  }& .viget-right-footer ul {
+  }
+  & .viget-right-footer ul {
     display: flex;
-  }& .viget-right-footer ul li a {
+  }
+  & .viget-right-footer ul li a {
     font-size: 12px;
     color: #282828;
-  }& .viget-right-footer ul li span {
+  }
+  & .viget-right-footer ul li span {
     margin: 0px 5px;
-}& .viget-right-footer p {
-  margin-top: 15px;
-  font-size: 12px;
-}& .viget-right-footer p a {
-  color: #282828;
-}& .viget-right-footer p span {
-  margin: 0px 8px;
-}
-
+  }
+  & .viget-right-footer p {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+  & .viget-right-footer p a {
+    color: #282828;
+  }
+  & .viget-right-footer p span {
+    margin: 0px 8px;
+  }
 }
 
 .toggle-menu {
@@ -444,9 +444,9 @@ header {
   visibility: hidden;
   opacity: 0;
   transition: opacity 700ms ease;
-  overflow-y: auto;  
+  overflow-y: auto;
   z-index: 111;
-  & .menu-list{
+  & .menu-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -454,28 +454,27 @@ header {
   }
   & .menu-left {
     max-width: 449px;
-     & h3{
+    & h3 {
       font-size: 12px;
-    color: #757575;
-    cursor:none;
-    text-decoration: none;
+      color: #757575;
+      cursor: none;
+      text-decoration: none;
     }
-    & li{
+    & li {
       font-size: 4rem;
-    font-weight: 300;
-    margin: 2rem 0;
-    cursor: pointer;
-    
+      font-weight: 300;
+      margin: 2rem 0;
+      cursor: pointer;
     }
-    & li:hover{
+    & li:hover {
       text-decoration: underline 2px;
     }
-   
-    & p{
-      font-size:1.2rem;
+
+    & p {
+      font-size: 1.2rem;
       line-height: 1.6;
       /* font-weight: 300; */
-      margin: 2rem 0 ;
+      margin: 2rem 0;
     }
     & a {
       padding: 1rem 2rem;
@@ -484,34 +483,33 @@ header {
       color: #ffffff;
       cursor: pointer;
     }
-
   }
   & .menu-right {
     max-width: 449px;
     margin: 2rem 0 0 0;
-    & h2{
+    & h2 {
       font-size: 12px;
       color: #757575;
       text-transform: uppercase;
     }
   }
 }
-.toggle-nav{
+.toggle-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2rem;
-  & button{
+  & button {
     background: transparent;
     border: none;
     display: flex;
     align-items: center;
-    & img{
+    & img {
       margin-left: 0.5rem;
     }
   }
 }
-.featured{
+.featured {
   padding: 64px 0 0 0;
 }
 .Feature-articls {
@@ -527,7 +525,7 @@ header {
     margin: 0.5rem 0;
     cursor: pointer;
   }
-  & h3:hover{
+  & h3:hover {
     text-decoration: underline;
   }
 
@@ -553,5 +551,134 @@ header {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  /* .viget-navlinks li:nth-child(1),
+  .viget-navlinks li:nth-child(2),
+  .viget-navlinks li:nth-child(3) {
+    display: none;
+  } */
 
+  .viget-navlinks li{
+    display: none;
+    & img{
+      height: 80px;
+      width:130px;
+    }
+  }
 
+  .image-gallery-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .viget-images {
+    margin: 100px;
+
+    & ul {
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+    & li {
+      padding: 10px;
+    }
+  }
+
+  .viget-left-article {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .article {
+    display: flex;
+  }
+  .grid-gallery {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .viget-justify-content {
+    width: auto;
+  }
+  .viget-footer-content {
+    & p {
+      text-align: center;
+    }
+    & a {
+      margin-left: 40%;
+    }
+  }
+  .viget-footer {
+    display: block;
+  }
+  .contact-btn {
+    text-align: center;
+  }
+
+  .footer-section {
+    display: block;
+    text-align: center;
+    & .viget-practice {
+      display: block;
+      margin-left: 0%;
+    }
+  }
+  .viget-left-footer {
+    display: block;
+    & div {
+      margin: 10px 0;
+      text-align: center;
+
+      & .left-footer-logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    }
+  }
+  .viget-right-footer {
+    text-align: center;
+    & ul {
+      margin: 40px 0px;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .article-main {
+    & img {
+      display: none;
+    }
+  }
+  .viget-collabs-article {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .image-gallery-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .viget-images {
+    & ul {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin-left: 100px;
+    }
+    & li {
+      padding: 5px;
+    }
+  }
+
+  .article-main {
+    & img {
+      display: none;
+    }
+  }
+  .viget-collabs-article {
+    margin-left: 50px;
+  }
+  .article {
+    display: block;
+  }
+}
