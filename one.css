@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.viget-navbar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+.viget-navlinks {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.viget-navlinks li {
+  margin: 0 10px;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: rgb(20, 95, 145);
+  border-radius: 30px;
+  & a{
+    color: whitesmoke;
+    text-decoration: none;
+  }
+}
+
+.menu-bar-open {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-content span {
+  font-size: 12vmin;
+  font-weight: 100;
+  color: rgb(38, 38, 36);
+}
+
+.header-content p {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-size: 3.1vmin;
+}
+
+.image-gallery-container {
+  display: flex;
+  & .image-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  & img {
+    width: 100%;
+    height: 500px;
+    transition: transform 1000ms ease;
+  }
+  & img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.image-gallery figure {
+  overflow: hidden;
+  position: relative;
+}
+
+header {
+  margin-top: 150px;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+.image-gallery {
+  padding: 30px;
+  margin-left: -25px;
+}
+
+.image-gallery span {
+  font-size: 2.4vmin;
+  padding: 15px 0px;
+}
+
+.image-gallery a {
+  text-decoration: none;
+  color: black;
+  font-size: 4vmin;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 10px 25px;
+  background: rgb(20, 95, 145);
+  border-radius: 30px;
+  color: whitesmoke;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.viget-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.viget-images {
+  margin: 100px;
+
+  & ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & li {
+    padding: 35px;
+  }
+ 
+}
+
+.viget-client-include {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & span {
+    margin-bottom: -50px;
+  }
+  text-align: center;
+}
+
+.viget-client {
+  margin-top: 200px;
+}
+
+.viget-clients-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  & button {
+    cursor: pointer;
+    padding: 14px 40px;
+    border: 1.5px solid;
+    border-radius: 35px;
+    border-color: rgb(20, 95, 145);
+    color: rgb(20, 95, 145);
+    font-size: 3vmin;
+  }
+  :hover {
+    background-color: rgb(20, 95, 145);
+    color: whitesmoke;
+  }
+}
+.article-section {
+  background-color: brown;
+}
+
+.viget-article-main {
+  margin-top: 170px;
+  margin-bottom: 170px;
+  & h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 2.7vmin;
+    font-weight: 1px;
+    padding: 100px;
+  }
+}
+
+.article-main {
+  display: flex;
+  border-right: 1px solid rgba(168, 150, 50, 0.511);
+  & img {
+    border-radius: 200px;
+    margin: 100px 50px;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.viget-collabs-article {
+  cursor: pointer;
+  & span {
+    font-size: 2.5vmin;
+    color: whitesmoke;
+  }
+  & h3 {
+    font-size: 9vmin;
+    font-weight: 10;
+    color: whitesmoke;
+  }
+  & h3:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  & p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 4vmin;
+    color: whitesmoke;
+  }
+  & .title {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+}
+.viget-left-article {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.article-spets,
+.article-sublogo {
+  display: flex;
+  /* justify-content: center; */
+  column-gap: 26px;
+  padding: 3rem 2rem;
+  & li {
+    list-style-type: none;
+    & img {
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+  }
+  
+}
+.article-sublogo{
+  & img{
+    cursor: pointer;
+  }
+}
+.article-spets {
+  border-bottom: 1px solid rgba(168, 150, 50, 0.511);
+  & img{
+    cursor: pointer;
+}
+  }
+  
+.viget-connect-article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  cursor: pointer;
+  & p {
+    color: white;
+    font-size: 1.5rem;
+  }& p:hover{
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+  }
+  & span {
+    color: whitesmoke;
+
+ 
+  }
+  & .title {
+    color: green;
+    font-size: 2.5vmin;
+  }
+}
+
+.viget-wishlist-article {
+  cursor: pointer;
+  & p {
+    color: white;
+    font-size: 1.5rem;
+
+  }& p:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  & span {
+    color: whitesmoke;
+  }
+  & .title {
+    color: green;
+    font-size: 2.5vmin;
+  }
+}
+
+.viget-articles-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & button {
+    border: white;
+    color: rgb(20, 95, 145);
+    font-size: 3vmin;
+    padding: 15px 35px;
+    border-radius: 50px;
+    margin-bottom: 5rem;
+    cursor: pointer;
+  }
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+  & img:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 130px 70px 40px 50px;
+
+  & .viget-justify-content {
+    width: 50%;
+  }
+  & .viget-footer-content {
+    text-align: left;
+    & a {
+      font-size: 2.5vmin;
+      color: rgb(20, 95, 145);
+      text-decoration: none;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+
+    & p {
+      font-size: 6vmin;
+      font-weight: 300;
+    }
+    & .bold-para {
+      font-weight: 400;
+    }
+    & .contact-btn {
+      padding: 20px 0px;
+      & button {
+        padding: 10px 30px;
+        border-radius: 30px;
+        border: none;
+        background-color: rgb(20, 95, 145);
+        font-size: 3vmin;
+        color: whitesmoke;
+        cursor: pointer;
+      }
+    }
+  }
+  & .viget-practice {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 2.6;
+    margin-bottom: 60px;
+    & .practice {
+      font-size: 2vmin;
+      color: grey;
+    }
+    & .practice:hover {
+      text-decoration: none;
+      cursor: auto;
+      color: grey;
+    }
+    & li:hover {
+      text-decoration: underline;
+      color: rgb(20, 95, 145);
+      cursor: pointer;
+    }
+  }
+  & .viget-sign-up {
+    & h4 {
+      color: rgb(36, 34, 34);
+    }
+    & p {
+      padding: 15px 0px;
+    }
+    & a {
+      text-decoration: none;
+      color: rgb(20, 95, 145);
+    }
+  }
+}
+
+
+.viget-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 40px 60px 40px;
+  border-top: 2px solid gray;
+  padding:40px;
+  & .viget-left-footer {
+    display: flex;
+  }& .viget-left-footer div .left-footer-logos {
+    display: flex;
+  }& .left-footer-logos li {
+    cursor: pointer;
+    margin: 0px 13px;
+    color: #757575;
+  }& .viget-right-footer ul {
+    display: flex;
+  }& .viget-right-footer ul li a {
+    font-size: 12px;
+    color: #282828;
+  }& .viget-right-footer ul li span {
+    margin: 0px 5px;
+}& .viget-right-footer p {
+  margin-top: 15px;
+  font-size: 12px;
+}& .viget-right-footer p a {
+  color: #282828;
+}& .viget-right-footer p span {
+  margin: 0px 8px;
+}
+
+}
+
+.toggle-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 700ms ease;
+  overflow-y: auto;  
+  z-index: 111;
+  & .menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+  & .menu-left {
+    max-width: 449px;
+     & h3{
+      font-size: 12px;
+    color: #757575;
+    cursor:none;
+    text-decoration: none;
+    }
+    & li{
+      font-size: 4rem;
+    font-weight: 300;
+    margin: 2rem 0;
+    cursor: pointer;
+    
+    }
+    & li:hover{
+      text-decoration: underline 2px;
+    }
+   
+    & p{
+      font-size:1.2rem;
+      line-height: 1.6;
+      /* font-weight: 300; */
+      margin: 2rem 0 ;
+    }
+    & a {
+      padding: 1rem 2rem;
+      background-color: #135c92;
+      border-radius: 30px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+  }
+  & .menu-right {
+    max-width: 449px;
+    margin: 2rem 0 0 0;
+    & h2{
+      font-size: 12px;
+      color: #757575;
+      text-transform: uppercase;
+    }
+  }
+}
+.toggle-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  & button{
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    & img{
+      margin-left: 0.5rem;
+    }
+  }
+}
+.featured{
+  padding: 64px 0 0 0;
+}
+.Feature-articls {
+  display: flex;
+  column-gap: 1rem;
+  margin: 2rem 0;
+  & p {
+    color: #282828;
+  }
+  & h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+  & h3:hover{
+    text-decoration: underline;
+  }
+
+  & img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+}
+.viget-feature-services {
+  & h3 {
+    font-size: 12px;
+    color: #757575;
+  }
+  & li {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  & li:hover {
+    text-decoration: underline;
+  }
+}
+
+
+

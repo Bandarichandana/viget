@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+.toggle-menu {
+    
+    background-color: white;
+
+    & .menu-list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 3rem;
+    }
+    & .menu-left {
+      max-width: 449px;
+       & h3{
+        font-size: 12px;
+      color: #757575;
+      cursor:none;
+      text-decoration: none;
+      }
+      & li{
+        list-style: none;
+        font-size: 4rem;
+      font-weight: 300;
+      margin: 2rem 0;
+      cursor: pointer;
+      
+      }
+      & li:hover{
+        text-decoration: underline 2px;
+      }
+     
+      & p{
+        font-size:1.2rem;
+        line-height: 1.6;
+        /* font-weight: 300; */
+        margin: 2rem 0 ;
+      }
+      & a {
+        padding: 1rem 2rem;
+        background-color: #135c92;
+        border-radius: 30px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+  
+    }
+    & .menu-right {
+      max-width: 449px;
+      margin: 2rem 0 0 0;
+      & h2{
+        font-size: 12px;
+        color: #757575;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .toggle-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    & button{
+      background: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      & img{
+        margin-left: 0.5rem;
+      }
+    }
+  }
+  .featured{
+    padding: 64px 0 0 0;
+  }
+  .Feature-articls {
+    display: flex;
+    column-gap: 1rem;
+    margin: 2rem 0;
+    & p {
+      color: #282828;
+    }
+    & h3 {
+      font-size: 1.5rem;
+      font-weight: 200;
+      margin: 0.5rem 0;
+      cursor: pointer;
+    }
+    & h3:hover{
+      text-decoration: underline;
+    }
+  
+    & img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+  }
+  .viget-feature-services {
+    & h3 {
+      font-size: 12px;
+      color: #757575;
+    }
+    & li {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      font-weight: 300;
+      cursor: pointer;
+      list-style: none;
+    }
+    & li:hover {
+      text-decoration: underline;
+    }
+  }
