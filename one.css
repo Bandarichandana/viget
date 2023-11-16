@@ -161,6 +161,7 @@ header {
     border-color: rgb(20, 95, 145);
     color: rgb(20, 95, 145);
     font-size: 3vmin;
+    background-color: white;
   }
   :hover {
     background-color: rgb(20, 95, 145);
@@ -328,9 +329,9 @@ header {
   justify-content: space-between;
   margin: 130px 70px 40px 50px;
 
-  & .viget-justify-content {
+  /* & .viget-justify-content {
     width: 100%;
-  }
+  } */
   & .viget-footer-content {
     text-align: left;
     & a {
